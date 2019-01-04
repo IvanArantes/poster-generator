@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DragComponent } from './components/drag/drag.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'drag',
+    component: DragComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

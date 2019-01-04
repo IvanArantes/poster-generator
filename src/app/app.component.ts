@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'poster-generator';
+  fileUploaded: File;
+
+
+  uploadFile(files: FileList){
+    console.log('teste' + files[0]);
+  }
 }
