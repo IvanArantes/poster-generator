@@ -8,12 +8,14 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import { AngularDraggableModule } from 'angular2-draggable';
 import {MatButtonModule, MatCheckboxModule, MatMenuModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { PlaygroundComponent } from './components/playground/playground.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DragComponent
+    DragComponent,
+    PlaygroundComponent
   ],
   imports: [
     BrowserModule,
