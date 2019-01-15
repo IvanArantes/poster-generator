@@ -1,6 +1,9 @@
 <div class="example-box" 
 ngDraggable 
-ngResizable>
+ngResizable
+[bounds]="actualParent"
+[zIndex]="item.zIndex"
+[inBounds]="true">
 {{item.innerText}}
 </div>
 

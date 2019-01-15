@@ -1,3 +1,6 @@
+
 <button mat-button (click)="addBox()">Add box</button>
 
-<app-drag *ngFor="let item of itens" [item]="item"></app-drag>
+<div class="playground-base" #playgroundBase>
+    <app-drag *ngFor="let item of itens" [item]="item" [parent]="playgroundBase"></app-drag>
+</div>

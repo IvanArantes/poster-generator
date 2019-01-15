@@ -1,3 +1,5 @@
+import { ElementRef } from '@angular/core';
+
 export class Draggable {
     File: string;
     width: string;
@@ -5,4 +7,6 @@ export class Draggable {
     innerText: string;
     backgroundType: string;
     zIndex: number;
+    parent: ElementRef;
+
 }

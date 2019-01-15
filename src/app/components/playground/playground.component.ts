@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Draggable } from 'src/app/model/draggable.model';
+
 
 @Component({
   selector: 'app-playground',
@@ -9,6 +10,9 @@ import { Draggable } from 'src/app/model/draggable.model';
 export class PlaygroundComponent implements OnInit {
   itens: Array<Draggable> = [];
 
+  @ViewChild('playgroundBase') 
+  public divPlayground: ElementRef;
+
   constructor() { }
 
   ngOnInit() {
@@ -16,8 +20,10 @@ export class PlaygroundComponent implements OnInit {
 
   addBox(){
     let draggable = new Draggable();
-    draggable.innerText = 'TESTE1'
+    draggable.innerText = 'TESTE1';
+    //draggable.parent = this.divPlayground;
     this.itens.push(draggable);
 
-  }  
+  }
+
 }
